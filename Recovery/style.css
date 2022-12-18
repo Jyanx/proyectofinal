@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'SF Pro Display', sans-serif;  
+    
+}
+body{
+width: 100%;
+background-image: url(../img/background.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.iniciosesion {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    align-items: center;
+    min-height: 100vh;
+    margin-right: 5%;
+}
+
+.formularioiniciosesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #322f4f;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(56,42,108, 0.7);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    height: 80vh
+}
+
+.bienvenidos {
+    font-size: 2rem;
+    color: white;
+    margin: 0px;
+}
+.text1 {
+    color:#fff;
+    margin: 0px;
+    font-size:0.8rem;
+    text-align: center;
+}
+.wrapperformulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+.wrapperformulario h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.botonsesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.formulario {
+    margin: 0 auto;
+}
+
+.formulario label {
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto 0px 30px;
+}
+
+.iniciar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.iniciarsesion {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to    right, rgb(105, 22, 112) 50%,rgb(77, 2, 250) 50%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-position .3s ease;
+}
+.iniciarsesion:hover{
+    background-position: right;
+}
+.primeraregistro {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.primeraregistro a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.primeraregistro a:hover{
+    color: #fff
+}
+.form{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+    margin: auto;
+    padding: 2rem;
+}
+.form .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.4s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    transition: all 0.4s ease;
+    color: #fff;
+}
+.form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after{
+    transform: translateX(0%);
+}
+
+
+@media (max-width:1000px){
+        .iniciosesion{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+        }
+        .wrapperformulario{
+            width: 90%;
+        }
+        .formularioiniciosesion{
+            width: 90%;
+        }
+        .correito{
+            width: 300px;
+        }
+        .iniciosesion{
+            width: 100%;
+        }
+        .bienvenidos{
+            text-align: center;
+        }
+}
+@media (max-width:500px){
+    .correito{
+        width: 250px;
+    }
+}
+.LogoC{
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+.Link{
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    display: flex;
+}
